@@ -21,8 +21,6 @@ class Predict2:
                 y_pred = snn.predict(np.array(sp[i1]))
             sp2.append(Split.split(np.array(sp[i1]), y_pred))
             # sp2为字典组成的数组
-            # print('sp2的长度')
-            # 增加的操作如下
         temp = 0
         for i_a in a:
             d=[]
