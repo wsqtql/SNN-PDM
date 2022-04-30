@@ -19,9 +19,7 @@ def snn(X, neighbor_num, min_shared_neighbor_num):
 
     # for each data point, find their set of K nearest neighbors
     knn_graph = kneighbors_graph(X, n_neighbors=neighbor_num, include_self=False)
-    # kneighbors_graph类返回用KNN时和每个样本最近的neighbor_num个训练集样本的位置。
     neighbors = np.array([set(knn_graph[i].nonzero()[1]) for i in range(len(X))])
-    # nonzero是得到数组array中非零元素的位置（数组索引）的函数。它的返回值是一个长度为a.ndim(数组a的轴数)的元组。
     # the distance matrix is computed as the complementary of the proportion of shared neighbors between each pair of data points
     snn_distance_matrix = np.asarray([[get_snn_distance(neighbors[i], neighbors[j]) for j in range(len(neighbors))] for i in range(len(neighbors))])
 
@@ -35,13 +33,12 @@ def get_snn_similarity(x0, x1):
     """Calculate the shared-neighbor similarity of two sets of nearest neighbors, normalized by the maximum number of shared neighbors"""
 
     return len(x0.intersection(x1)) / len(x0)
-#intersection找到相同项，算出相同项的比例
 
 def get_snn_distance(x0, x1):
     """Calculate the shared-neighbor distance of two sets of nearest neighbors, normalized by the maximum number of shared neighbors"""
 
     return 1 - get_snn_similarity(x0, x1)
-# 假装是距离，因为比例越大，距离越小，他是这么算的
+
 
 class SNN(BaseEstimator, ClusterMixin):
     """Class for performing the Shared Nearest Neighbor (SNN) clustering algorithm.
