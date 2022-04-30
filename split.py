@@ -1,5 +1,5 @@
 import numpy as np
-# 根据y去切分X
+# Split the data set X according to the value of the label y，this method will be used before and after clustering
 class Split:
     def split(X,y):
         a={}
