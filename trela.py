@@ -1,6 +1,6 @@
 import numpy as np
 from rela import Rela
-
+#Compute the relative density of the test sample a on the sample set X，return the relative density value
 class Trela:
     def trela(a,X):
         Y = X.copy()
