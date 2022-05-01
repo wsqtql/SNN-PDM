@@ -4,7 +4,7 @@
 ###### Title: SNN-PDM:An Improved Probability Density Machine Algorithm based on Shared Nearest Neighbors Clustering Technique
 ###### Time:2022/4/30
 ###### Institution：Jiangsu University of Science and Technology
-'''
+
 ##Requirements
 ####python3.6
 ####numpy
@@ -15,3 +15,4 @@
 from predict import Predict
 y_predict=Predict.predict(X_test,X_train,y_train)
 ```
+'''
