@@ -5,7 +5,7 @@ import numpy as np
 
 
 class Predict:
-    def snn-pdm(a,X,y):
+    def snnpdm(a,X,y):
         #Separating samples from different classes
         sp = Split.split(X,y)
         tnum = len(sp)#Number of classes in the training set
