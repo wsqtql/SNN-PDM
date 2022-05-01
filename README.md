@@ -6,10 +6,10 @@
 ###### Institution：Jiangsu University of Science and Technology
 
 ## Requirements
-#### python3.6
-#### numpy
+#### * python3.6
+#### * numpy
 
-## main function
+## Usage
 #### Our main  function is the predict function, which is used as follows
 ```python
 from predict import Predict
