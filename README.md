@@ -15,4 +15,4 @@
 from predict import Predict
 y_predict=Predict.predict(X_test,X_train,y_train)
 ```
-'''
+
