@@ -5,14 +5,14 @@
 ###### Time:2022/4/30
 ###### Institution：Jiangsu University of Science and Technology
 
-## Requirements
+# Requirements
 #### - python3.6
 #### - numpy
 
-## The main algorithm
+# The main algorithm
 #### predict
 
-## Usage
+# Usage
 #### Our main  function is the predict function, which is used as follows
 ```python
 from predict import Predict
