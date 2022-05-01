@@ -9,6 +9,9 @@
 #### - python3.6
 #### - numpy
 
+## The main algorithm
+#### predict
+
 ## Usage
 #### Our main  function is the predict function, which is used as follows
 ```python
