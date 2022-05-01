@@ -10,12 +10,12 @@
 #### - numpy
 
 # The main algorithm
-#### snn-pdm
+#### snnpdm
 
 # Usage
-#### Our main  function is the predict function, which is used as follows
+#### Our main  function is the snnpdm function, which is used as follows
 ```python
 from predict import Predict
-y_predict=Predict.snn-pdm(X_test,X_train,y_train)
+y_predict=Predict.snnpdm(X_test,X_train,y_train)
 ```
 '''
